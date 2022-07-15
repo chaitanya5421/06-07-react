@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pseudo Selectors</title>
+		<style type="text/css">
+			.parentdiv div:first-child{
+				background-color: orange;
+				padding: 10px;
+				margin: 10px;
+			}
+
+
+			.parentdiv div:last-child{
+				background-color: lightgreen;
+				padding: 10px;
+				margin: 10px;
+			}
+
+			.parentdiv div:nth-child(2){
+				background-color: lightblue;
+				padding: 10px;
+				margin: 10px;
+			}
+
+			.parentdiv div:nth-child(2n){
+				background-color: firebrick;
+				padding: 10px;
+				margin: 10px;
+			}
+
+			.parentdiv div:nth-child(2n):hover{
+				background-color: blue;
+				font-size: 30px;
+			}
+
+			a:link{
+				color: forestgreen;
+			}
+
+			a:visited{
+				color: blue;
+			}
+
+			a:hover{
+				background-color: rosybrown;
+			}
+
+			input:focus{
+				background-color: darkcyan;
+			}
+
+			article::first-line{
+				color: red;
+				font-size: 25px;
+			}
+
+			article::first-letter{
+				color: green;
+				font-size: 35px;
+			}
+
+			article::selection{
+				background-color: forestgreen;
+			}
+
+			article::before{
+				content: 'Hey...'
+			}
+
+			article::after{
+				content: 'Thank you...'
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		 Pseudo Selector - it allows developer to style the element with its state inside DOM.
+		 	- Pseudo class Selector(state:state of the element)
+		 		- first-child
+		 		- last-child
+		 		- nth-child()
+		 		- nth-child()(odd/2n+1)(even/2n)
+			- anchor
+		 		- link
+		 		- visited
+		 		- hover
+		 		- focus
+
+		 	- Pseudo Element Selector(state :: state of the element)
+		 		- ::first-line
+		 		- ::first-letter
+		 		- ::selection
+		 		- :: before 
+		 		- :: after
+		 -->
+
+		<h2>Pseudo Selector</h2>
+		<div class="parentdiv">
+			<div>HTML</div>
+			<div>CSS</div>
+			<div>JAVASCRIPT</div>
+			<div>BOOTSTRAP</div>
+			<div>REACTJS</div>
+		</div>
+		<a href="#">This is a link</a>
+		<input type="text"  />
+		<article>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+		</article>
+	</body>
+</html>

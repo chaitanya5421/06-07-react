@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combinator Selectors</title>
+		<style type="text/css">
+			/*descendent selector*/
+			ul li{
+				background-color: lightgreen;
+				margin-bottom: 10px;
+				padding: 10px;
+			}
+
+			/*child Selector*/
+				ul > li{
+					border: 2px solid red;
+				}
+
+			/*adjacent sibling Selector*/
+				.sectionclass + article{
+					background-color: rosybrown;
+					margin-bottom: 10px;
+					padding: 10px;		
+				}
+
+				/*general sibling selector*/
+				.sectionclass ~ div{
+					background-color: greenyellow;
+					margin-bottom: 10px;
+					padding: 10px;
+				}
+
+		</style>
+	</head>
+	<body>
+			<!-- 
+				combinator Selectors
+					- descendent Selector(space)
+					- Child Selector(>)
+					- Adjacent Sibling Selector(+)
+					- General Sibling Selector(~)
+			 -->
+
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>BOOTSTRAP</li>
+				<li>JAVASCRIPT</li>
+				<div>
+					<li>This is div</li>
+				</div>
+				<li>REACTJS</li>
+			</ul>
+
+			<section class="sectionclass">This is section</section>
+			<article>This is article</article>
+			<div>This is Div</div>
+			<article>This is article</article>
+			<div>This is another div</div>
+	</body>
+</html>

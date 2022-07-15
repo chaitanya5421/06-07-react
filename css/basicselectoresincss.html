@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introduction to css</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<!-- Internal stylings -->
+			<style type="text/css">
+				*{
+					/*background-color: yellowgreen;*/
+					/*color: blue;*/
+				}
+
+				h2{
+					color: gainsboro;
+				}
+
+				.sectionclass{
+					color: brown;
+					background-color: greenyellow;
+					font-size: 25px;
+				}
+
+				.head{
+					color: brown;
+					background-color: greenyellow;
+					font-size: 25px;
+				}
+				
+				#headid{
+					color: blue;
+					border: 1px solid pink;
+					background-color: orange;
+					font-size: 30px;
+				}
+
+				.headclass{
+					color: green;
+				}
+
+				h3{
+					color: red;
+				}
+
+				p,article{
+					color: greenyellow;
+					background-color: orange;
+				}
+
+
+			</style>
+	</head>
+	<body>
+		<!-- 
+			basic selectors
+				- global selector(*)
+				- Tag Selector(tagname)
+				- class(.)
+				- id(#)
+				- grouping selector(,)
+		 -->
+		<h2 class="head">Selectors</h2>
+		<section class="sectionclass">This is Section</section>
+		<h3 id="headid" class="headclass">This is heading</h3>
+		<p>This is para</p>
+		<article>This is article</article>
+	</body>
+</html>

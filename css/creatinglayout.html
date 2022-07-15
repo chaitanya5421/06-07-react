@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating layout using flex</title>
+		<style type="text/css">
+			.parentdiv{
+				border: 1px solid red;
+				padding: 10px;
+				display: flex;
+			}
+			.parentdiv div{
+					padding: 10px;
+					margin: 10px;
+					background-color: firebrick;
+					/*width: 24%;*/
+			}
+
+			section{
+				display: flex;
+				background-color: #343a40;
+			}
+
+			ul{
+				display: flex;
+				list-style-type: none;
+				color: 	white;
+			}
+			ul li{
+				flex: 1;
+			}
+		</style>
+	</head>
+	<body>
+			<section>
+				<div style="flex:1">
+					<img src="https://www.achieversit.com/assets/images/logo-white.png" alt="ait-logo" />
+				</div>
+				<div style="flex:2">
+					<ul>
+						<li>All courses</li>
+						<li>All courses</li>
+						<li>All courses</li>
+						<li>All courses</li>
+						<li>All courses</li>
+						<li>All courses</li>
+
+					</ul>
+				</div>
+			</section>
+
+
+			<!--
+			 <div class="parentdiv">
+				<div style="flex:1">div1</div>
+				<div style="flex:3">div2</div>
+				<div style="flex:1">div3</div>
+			</div>
+			 -->
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attribute Selectors</title>
+		<style type="text/css">
+			/*has attribute*/
+			[alt]{
+				width: 400px;
+				height: auto;
+			}
+
+			/*attr values to*/
+			[src="../images/view.jpg"]{
+				border: 2px solid red;
+				padding: 10px;
+			}
+
+			/*attr starts with*/
+			[href ^= 'htt']{
+				background-color: orange;
+				font-size: 30px;
+				border: 1px solid blue;
+			}
+
+			/*attr value ends with*/
+			[class $= "ple"]{
+				border: 2px solid green;
+				height: 200px;
+				width: 100px;
+			}
+
+			/*attr value contains*/
+			[placeholder *= "te"]{
+				background-color: orange;
+			}
+
+
+		</style>
+	</head>
+	<body>
+			<!-- 
+				Attribute Selectors
+					- has attribute[src]
+					- attribute value equals to[src="../images/view.jpg"] 
+					- attr starts with[^]
+					- attr ends with[$]
+					- attr contains[*]
+			 -->
+		<h2>Attribute Selectors</h2>
+		<img src="../images/view.jpg" alt="attr-img" />
+
+		<a  href="https://www.achieversit.com/"><h3>This is anchor tag</h3></a>
+
+		<audio controls>
+			<source src="../multimedia/sampleaudio.mp3" type="audio/mp3">
+		</audio>	
+
+		
+		<video controls class="videosample">
+			<source src="../multimedia/samplevideo.mp4" type="video/mp4">
+		</video>	
+
+		<input type="text" placeholder="Enter your name" />
+	</body>
+</html>
