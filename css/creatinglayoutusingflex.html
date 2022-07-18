@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using Flex</title>
+		<style type="text/css">
+			.parentdiv{
+				border: 1px solid blue;
+				height: 500px;
+				display: flex;
+				flex-direction: row;
+				/*flex-wrap: wrap;*/
+				/*flex-flow: row-reverse wrap;*/
+				/*justify-content: space-evenly;*/
+				/*align-items:center;*/
+				/*align-content: space-between;*/
+			}
+			.childdiv{
+				height: 100px;
+				color: white;
+				width: 100px;
+				padding: 10px;
+				margin: 10px;
+				background-color: firebrick;
+				/*flex: 1;*/
+			}
+
+			.div1{
+				/*order: 2;*/
+				align-self: flex-start;
+			}
+			.div2{
+				/*flex: 2;*/
+				/*order: 3;*/
+				/*flex-shrink: 0;*/
+				/*flex-grow: 1;*/
+				align-self: center;
+			}
+
+			.div3{
+				/*order: 4;*/
+				align-self: flex-end;
+			}
+			.div4{
+				/*flex: 1;*/
+				align-self: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- 
+				flex-Box
+					- container properties(parent)
+						- flex-direction
+						- flex-wrap
+						- flex-flow
+						- justify-content
+						- align-content
+						- align-items
+					- Item Properties(child)
+						- flex
+						- order
+						- shrink
+						- grow
+						- align-self
+		 -->
+
+		 <h2>Creating layout using Flex</h2>
+		 <div class="parentdiv">
+		 	<div class="div1 childdiv">Div1</div>
+		 	<div class="div2 childdiv">Div2</div>
+		 	<div class="div3 childdiv">Div3</div>
+		 	<div class="div4 childdiv">Div4</div>
+		 			 	
+
+		 	
+
+
+		 </div>
+	</body>
+</html>

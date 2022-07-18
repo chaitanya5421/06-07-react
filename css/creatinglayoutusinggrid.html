@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using Grid</title>
+		<style type="text/css">
+			.parentdiv{
+				border: 1px solid blue;
+				display: grid;
+				grid-template-columns: repeat(3, 100px);
+				/*grid-template-rows: 150px 100px;*/
+				grid-auto-rows: minmax(150px,auto);
+				grid-gap: 20px;
+				/*justify-content: space-around;*/
+				justify-items: space-between;
+				align-items: center;
+			}
+
+			.childdiv{
+				color: white;
+				padding: 10px;
+				/*margin: 10px;*/
+				background-color: forestgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			Grid
+		 -->	
+
+		<div class="parentdiv">
+		 	<div class="div1 childdiv">div1</div>
+		 	<div class="div2 childdiv">Div2</div>
+		 	<div class="div3 childdiv">Div3</div>
+		 	<div class="div4 childdiv">Div4</div>
+
+
+		 </div>
+	</body>
+</html>
