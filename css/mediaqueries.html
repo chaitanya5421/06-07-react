@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media queries in CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style type="text/css">
+			.parentdiv{
+				border: 1px solid red;
+				padding: 10px;
+				background-color: orange;
+				/*display: flex;*/
+			}
+			img{
+				width: 22%;
+				min-height: 300px;
+				margin: 10px;
+			}
+
+			/*media queries for mobiles*/
+			@media only screen and (max-width: 600px){
+				img{
+					width: 100%;
+					height: auto;
+				}
+
+				.parentdiv{
+					border: 2px dotted blue;
+					background-color: firebrick;
+					/*flex-direction: column;*/
+				}
+			}
+			/*media queries for tables*/
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+				img{
+					width: 47%;
+					height: auto;
+				}
+				.parentdiv{
+					background-color: lightgreen;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- 
+			
+		 -->
+		<h2>Media Queries in CSS</h2>
+		<div class="parentdiv">
+			<img src="../images/car.jpg" alt="car" />
+			<img src="../images/audio.jpg" alt="car" />
+			<img src="../images/universe.jpg" alt="car" />
+			<img src="../images/view.jpg" alt="car" />
+
+		</div>
+	</body>
+</html>
